@@ -5,7 +5,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-     
+    background: whitesmoke;
 }
 
 @font-face {
@@ -21,8 +21,8 @@ body {
 .image-section {
     display: flex;
     flex-direction: column;
-    height: auto; 
-    width: 40%;
+    height: 100vh; 
+    width: 45%;
     background-image: url("plants.jpg");
     background-size: cover;
     background-position: center;
@@ -58,6 +58,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     background-color: whitesmoke;
+    width: 100%;
 }
 
 .message-container{
@@ -73,10 +74,96 @@ body {
     font-size: 20px;
 }
 
-.form-contaier{
+.information-container{
     display: flex;
-    margin: 30px;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width:100%;
     background-color: white;
-
+    box-shadow: 5px 5px 10px 0px lightgray;
 }
+
+/* remove the spacing on the top of the text */
+.information-container p { 
+    margin-top: 0;
+}
+
+.form-container{
+    border: 0px;
+    display: flex;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin-right: 80px;
+}
+
+.fieldset label{
+    font-size: 12px;
+    font-family: "Roboto";
+    color: #333;
+    font-weight: bold;
+}
+
+.fieldset input {
+    padding: 8px;
+    font-family: "Roboto";
+    padding-right: 80px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px; 
+}
+
+.fieldset input:last-child{
+    margin-bottom: 0px;
+}
+
+/*red outline for empty required password fields */
+.fieldset input[type="password"]:invalid {
+    outline: 1px solid red;
+}
+
+/* Remove red outline when password fields are focused */
+.fieldset input[type="password"]:focus {
+    outline: 1px solid blue;
+    box-shadow: 5px 5px 10px 0px lightgray;
+}
+
+.fieldset input:focus{
+    outline: 1px solid blue;
+    box-shadow: 5px 5px 10px 0px lightgray;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: bold;
+    /* color: whitesmoke; */
+}
+
+.create-account-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #596D48;
+    font-family: "Roboto";
+    font-size: 12px;
+    padding: 10px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #596D48;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px 0px lightgray;
+}
+
 

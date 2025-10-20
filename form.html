@@ -20,13 +20,13 @@
                 like this in your life to help you realize your deepest dreams.<br>
                 Sign up now to get started.<br>
                 <br>
-                You know what you want to do.<br>
+                You <i>know</i> you want to.<br>
             </p>
         </div>
-        <div>
-            <p>Lets do this!</p>
-            <div>
-                <fieldset>
+        <div class="information-container">
+            <p class="message-text">Lets do this!</p>
+            <div class = "form-container">
+                <fieldset class="fieldset">
                     <label for="first_name">FIRST NAME</label>
                     <input type="text" id="first_name" name="first_name">
 
@@ -34,25 +34,26 @@
                     <input type="email" id="email" name = "email">
 
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name = "password">
+                    <input type="password" id="password" name = "password" required>
                 </fieldset>
-            </div>  
-            <div>
-                <fieldset>
+            
+                <fieldset class="fieldset">
                     <label for ="last_name">LAST NAME</label>
                     <input type="text" id="last_name" name = "last_name">
 
                     <label for ="phone_number">PHONE NUMBER</label>
                     <input type="text" id="phone_number" name = "phone_number">
 
-                    <label for ="confirm_password">Last-Name</label>
-                    <input type="password" id="confirm_password" name =" confirm_password">
+                    <label for ="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" name =" confirm_password" required>
                 </fieldset>
             </div>
-            <div>
-                <button>Create Account</button>
-                <p>Already have an account?</p> <a href="something">Log in</a>
-            </div>
+        </div>
+        <div class="bottom-container">
+            <button class = "create-account-button">Create Account</button>
+            <p>Already have an account?
+                <a href="something">Log in</a>
+            </p>
         </div>
    </div>
 </body>
