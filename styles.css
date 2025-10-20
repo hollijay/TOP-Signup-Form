@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+     
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url("Norse-Bold.otf") format('opentype'); 
+}
+
+
+body {
+    display: flex;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+    width: 40%;
+    background-image: url("plants.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-container{
+    margin-top: 160px;
+    display:flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title-font{
+    font-family: "Norse-Bold";
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+}
+
+.icon{
+    width: 90px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.message-container{
+    margin-left:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-text{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-contaier{
+    display: flex;
+    margin: 30px;
+    background-color: white;
+
+}
+
